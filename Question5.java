@@ -25,8 +25,36 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-     
+    System.out.println("Enter number of loops: ");
     Scanner in = new Scanner(System.in);
+    int size = in.nextInt();
+    int array[] =new int[size];
+    for (int i = 0;i<size;i++)
+    {
+      int value = in.nextInt();
+      array[i] = value;
+
+    }
+    int maxvalue = 0;
+    int maxcount = 0;
+    for(int i = 0;i<size;i++)
+    {
+      int count = 0;
+      for (int j = 0; j < size; ++j) {
+        if (array[j] == array[i])
+        ++count;
+
+      }
+      if (count > maxcount) {
+        maxcount = count;
+        maxvalue = array[i];
+
+     }
+    }
+    System.out.println("Mode is: "+maxvalue);
+    in.close();
+    
+
     
   }
 }
