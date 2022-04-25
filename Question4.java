@@ -16,8 +16,21 @@ public class Question4
      * 
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
-     
+    System.out.println("Enter int to make right angled triangle");
     Scanner in = new Scanner(System.in);
+    int loops = in.nextInt();
+    for(int i = 0;i<loops;i++)
+    {
+      for (int ii=0; ii<loops-i; ii++)
+      {
+        System.out.print("*");
     
+      }
+      System.out.println();
+  
+      
+    }
+    in.close();
+
   }
 }
