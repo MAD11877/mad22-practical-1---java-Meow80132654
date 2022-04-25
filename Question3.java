@@ -9,8 +9,11 @@ public class Question3
      * 
      * Hint: in.nextInt() to read integer
      */
-     
+    System.out.println("Reads integer entered by the user, multiplies the integer by itself and print out the result");
     Scanner in = new Scanner(System.in);
+    int number = in.nextInt();
+    System.out.println(number*number);
+    in.close();
     
   }
 }
